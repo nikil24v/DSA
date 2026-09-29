@@ -1,12 +1,12 @@
 #include<iostream>
-#include<thread>
 #include<chrono>
+#include<thread>
 using namespace std;
 
 void hello()
 {
     this_thread::sleep_for(chrono::milliseconds(1000));
-    thread::id id = this_thread::get_id();
+    this_thread::id id = this_thread::get_id();
     cout<<"Id is "<<id<<endl;
     cout<<"Hi from Hello"<<endl;
 }
